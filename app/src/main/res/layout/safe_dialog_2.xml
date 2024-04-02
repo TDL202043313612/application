@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_10"
+    android:paddingVertical="@dimen/dp_8"
+    tools:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_original_password"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp_15"
+        android:ellipsize="end"
+        android:hint="@string/common_code_input_original_password"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingVertical="@dimen/dp_10"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_13" />
+
+</LinearLayout>

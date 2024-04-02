@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E91E63</color>
+    <color name="green">#8BC34A</color>
+    <color name="gray">#BCBCBC</color>
+    <color name="colorPrimary">#344261</color>
+    <color name="icolorPrimaryReverse">#ffffff</color>
+    <color name="colorPrimaryReverse">#ffffff</color>
+    <color name="sub_text_color">#999999</color>
+    <color name="light_gray">#C0C0C0</color>
+    <color name="colorPrimaryDarkReverse">#eeeeee</color>
+    <color name="windowBackground">#f5f5f5</color>
+    <color name="refresh">#344261</color>
+    <color name="windowStatusBar">#344261</color>
+    <color name="NavigationBarColor">#ffffff</color>
+    <color name="skin_topbar_bg">#344261</color>
+    <color name="skin_text">#FFFFFFFF</color>
+    <color name="news_text">#FFFFFFFF</color>
+    <color name="commonTabLayout_text">#0025ff</color>
+    <color name="commonTabLayout_image">#0025ff</color>
+    <color name="commonTabLayout_background">#0025ff</color>
+
+    <color name="slidingTabLayout_dark_unselect_text">#999999</color>
+    <color name="slidingTabLayout_dark_select_text">#ffffff</color>
+
+    <color name="slidingTabLayout_light_unselect_text">#000000</color>
+    <color name="slidingTabLayout_light_select_text">#ffffff</color>
+
+    <color name="lr_background">#9BB4EA</color>
+
+    <color name="common_cancel_text_color">#F44336</color>
+
+
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 熊猫色（黑白背景通吃） -->
+    <color name="panda">#FF757575</color>
+    <color name="common_accent_color">#5A8DDF</color>
+    <color name="common_icon_color">#7C7C7C</color>
+    <color name="common_line_color">#ECECEC</color>
+    <color name="common_confirm_text_color">#007AFF</color>
+    <color name="common_primary_color">@color/white</color>
+
+    <!-- 按钮按压时的颜色 -->
+    <color name="common_button_pressed_color">#AA5A8DDF</color>
+    <!-- 按钮禁用时的颜色 -->
+    <color name="common_button_disable_color">#BBBBBB</color>
+    <color name="color_bg_name">#80000000</color>
+</resources>

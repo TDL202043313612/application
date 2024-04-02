@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 阴影层，位于底层 -->
+    <item android:drawable="@drawable/personal_shadow_shape"
+        android:top="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:bottom="5dp"/>
+
+    <!-- 基础形状层，位于顶层 -->
+    <item android:drawable="@drawable/personal_rect_shape"/>
+</layer-list>

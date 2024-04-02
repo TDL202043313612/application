@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.applications">
+    <!-- 网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" /> <!-- 手机状态 -->
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:remove="android:maxSdkVersion" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" /> <!-- 安装权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-feature android:name="android.hardware.camera" /> <!-- 表示当前已经适配了分区存储 -->
+    <meta-data
+        android:name="ScopedStorage"
+        android:value="true" />
+
+    <application
+        android:name=".app.AppApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/study"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".activity.SettingFaceLoginActivity"
+            android:exported="true" />
+
+        <receiver android:name=".util.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.PrivacyAgreementActivity"
+            android:exported="true" /> <!-- 表示当前已经适配了分区存储 -->
+        <meta-data
+            android:name="ScopedStorage"
+            android:value="true" /> <!-- 适配 Android 7.0 文件意图 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.MyCollectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.WebActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true" />
+        <activity android:name=".activity.PersonalDataActivity" />
+        <activity android:name=".activity.ImageSelectActivity" /> <!-- 崩溃展示（必须在独立进程） -->
+        <activity
+            android:name=".activity.CrashActivity"
+            android:launchMode="singleTop"
+            android:process=":crash"
+            android:screenOrientation="landscape" /> <!-- 重启应用（必须在独立进程） -->
+        <activity
+            android:name=".activity.RestartActivity"
+            android:launchMode="singleTop"
+            android:process=":restart" /> <!-- 拍照选择 -->
+        <activity
+            android:name=".activity.CameraActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 图片裁剪 -->
+        <activity
+            android:name=".activity.ImageCropActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 查看大图 -->
+        <activity
+            android:name=".activity.ImagePreviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BrowserActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 设置页 -->
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/setting_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 重置密码 -->
+        <activity
+            android:name=".activity.PasswordResetActivity"
+            android:label="@string/password_reset_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 忘记密码 -->
+        <activity
+            android:name=".activity.PasswordForgetActivity"
+            android:label="@string/password_forget_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 更换手机 -->
+        <activity
+            android:name=".activity.PhoneResetActivity"
+            android:label="@string/phone_reset_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 关于我们 -->
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="@string/about_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- AI -->
+        <activity
+            android:name=".activity.ErnieBotActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".arcface.InitRecognizeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".arcface.InitRegisterActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

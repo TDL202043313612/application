@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pursuit</string>
+    <string name="back_homepage">Homepage</string>
+    <string name="login">Login</string>
+    <string name="login_back">
+        &lt;-
+                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        Login
+                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </string>
+    <string name="register">Register</string>
+    <string name="register_forward">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        Register
+                                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        -&gt;
+    </string>
+    <string name="account_hint">Account</string>
+    <string name="phone_hint">Phone number</string>
+    <string name="verification_hint">Verification code</string>
+    <string name="password_hint">Password</string>
+    <string name="re_password_hint">Password again</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_title">Learning Video App</string>
+    <string name="splash_desc">Learning is happening right now</string>
+    <string name="splash_build_time">Built on %s</string>
+    <string name="run_login">Logging in...</string>
+    <string name="common_network_error">The current network is unavailable, please check your network settings</string>
+
+    <string name="news_title">News</string>
+    <string name="home_search_hint">Search for videos you like</string>
+
+    <string name="my_welcome_text">Welcome to this platform</string>
+    <string name="my_title_one">Read</string>
+    <string name="my_title_two">Like</string>
+    <string name="my_title_three">Comment</string>
+    <string name="my_title_four">Share</string>
+    <string name="my_collect_name">My Collection</string>
+    <string name="my_skin_name">Change Skin</string>
+
+    <!-- toast -->
+    <string name="toast_no_data">No data available</string>
+    <string name="toast_no_more_data">No more data available</string>
+    <string name="toast_error_network_location">Location failed or network error!!</string>
+    <string name="toast_empty_account">Account cannot be empty!!</string>
+    <string name="toast_empty_password">Password cannot be empty!!</string>
+    <string name="toast_error_network">Current network is unavailable, please check the network!!</string>
+    <string name="toast_not_match_password">Passwords do not match!!</string>
+    <string name="toast_already_exist_account">Account already exists!!</string>
+    <string name="toast_back_application">Press back again to exit</string>
+
+    <string name="toast_success_copy">Copy successful</string>
+
+    <!-- MessageDialog -->
+    <string name="message_dialog_clear_title">Clear</string>
+    <string name="message_dialog_clear_content">Clear cache files?</string>
+
+    <string-array name="home_sliding_tab_title">
+        <item>Graduate Entrance Exam</item>
+        <item>Information Technology</item>
+        <item>College English Test</item>
+        <item>Civil Service Exam</item>
+        <item>Teacher Certification Exam</item>
+        <item>National College Entrance Exam</item>
+        <item>Practical English</item>
+        <item>Judicial Exam</item>
+    </string-array>
+    <string-array name="home_common_tab_title">
+        <item>Home</item>
+        <item>News</item>
+        <item>My</item>
+    </string-array>
+
+    <string name="sliding_menu_setting_name">Setting</string>
+
+    <string name="personal_data_title">Personal Information</string>
+    <string name="personal_data_head">Avatar</string>
+    <string name="personal_data_id">User ID</string>
+    <string name="personal_data_name">Nickname</string>
+    <string name="personal_data_name_hint">Set nickname</string>
+
+    <string name="personal_data_leave_message">Leave a Message</string>
+    <string name="personal_data_leave_message_hint">Set a Leave Message</string>
+
+    <string name="personal_data_address">Region</string>
+    <string name="personal_data_address_hint">Please select</string>
+    <string name="personal_data_phone">Phone Number</string>
+    <string name="personal_data_phone_hint">Bind now</string>
+    <string name="common_unknown_error">Unknown error</string>
+    <string name="image_crop_error_not_support">Crop failed, current device does not support image cropping</string>
+    <string name="address_title">Please select region</string>
+    <string name="address_hint">Please select</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_confirm">Confirm</string>
+    <string name="status_layout_error_network">Network error, please retry</string>
+    <string name="status_layout_retry">Retry</string>
+    <string name="image_select_title">Image Selection</string>
+    <string name="camera_launch_fail">Unable to launch camera</string>
+    <string name="camera_image_error">Destination address error</string>
+    <string name="image_select_error">Unable to select, this image has been deleted</string>
+    <string name="image_select_max_hint">Maximum %d images can be selected this time</string>
+    <string name="image_select_all">All Images</string>
+    <string name="image_select_total">Total %d</string>
+    <string name="status_layout_no_data">Empty</string>
+    <string name="status_layout_error_request">Request error, please retry</string>
+    <string name="common_permission_alert">Authorization Reminder</string>
+    <string name="common_permission_fail_1">Authorization failed, please grant permission correctly</string>
+    <string name="common_permission_fail_2">Failed to obtain permission, please grant permission manually</string>
+    <string name="common_permission_fail_3">Failed to obtain permission, please grant %s manually</string>
+    <string name="common_permission_fail_4">Background location permission not granted, please choose "Always Allow"</string>
+    <string name="common_permission_goto">Go to authorization</string>
+    <string name="common_permission_location_background">Background Location Permission</string>
+    <string name="common_permission_storage">Storage Permission</string>
+    <string name="common_permission_camera">Camera Permission</string>
+    <string name="common_permission_microphone">Microphone Permission</string>
+    <string name="common_permission_location">Location Permission</string>
+    <string name="common_permission_contacts">Contacts Permission</string>
+    <string name="common_permission_phone">Phone Permission</string>
+    <string name="common_permission_calendar">Calendar Permission</string>
+    <string name="common_permission_call_log">Call Log Permission</string>
+    <string name="common_permission_sensors">Body Sensors Permission</string>
+    <string name="common_permission_activity_recognition">Fitness Activity Permission</string>
+    <string name="common_permission_sms">SMS Permission</string>
+    <string name="common_permission_install">Install App Permission</string>
+    <string name="common_permission_notification">Notification Permission</string>
+    <string name="common_permission_window">Overlay Window Permission</string>
+    <string name="common_permission_setting">System Settings Permission</string>
+    <string name="http_loading">Loading...</string>
+    <string name="http_unknown_error">Request error, unknown error</string>
+    <string name="http_token_error">Login expired, please log in again</string>
+    <string name="http_data_explain_error">Data parsing exception, please try again later</string>
+    <string name="http_server_out_time">Server request timeout, please try again later</string>
+    <string name="http_network_error">Request failed, please check network settings</string>
+    <string name="http_response_error">Server response exception, please try again later</string>
+    <string name="http_server_error">Server connection exception, please try again later</string>
+    <string name="http_request_cancel">Request interrupted, please retry</string>
+    <string name="common_network_hint">No network connection, please check network settings</string>
+    <string name="common_crash_hint">Oops, something went wrong with the app, it\'s restarting</string>
+    <string name="common_no_more_data">No more data available</string>
+    <string name="common_web_ssl_error_title">The current website\'s security certificate has expired or is untrusted.\nDo you want to continue browsing?</string>
+    <string name="common_web_ssl_error_allow">Continue browsing</string>
+    <string name="common_web_ssl_error_reject">Go back to previous page</string>
+    <string name="common_web_call_phone_title">Current number %s</string>
+    <string name="common_web_call_phone_allow">Call</string>
+    <string name="common_web_call_phone_reject">Cancel</string>
+    <string name="common_web_location_permission_title">The current website needs to access your location</string>
+    <string name="common_web_location_permission_allow">Grant</string>
+    <string name="common_web_location_permission_reject">Deny</string>
+    <string name="video_select_title">Video Selection</string>
+    <string name="video_select_all">All Videos</string>
+    <string name="video_select_total">Total %d</string>
+    <string name="video_select_max_hint">Maximum %d videos can be selected this time</string>
+    <string name="video_select_error">Unable to select, this video has been deleted</string>
+    <string name="common_loading">Loading...</string>
+    <string name="common_video_error_not_support">This video is not suitable for playback on this device</string>
+    <string name="common_video_error_unknown">Unable to play this video</string>
+    <string name="common_video_error_supplement">Error type: %d, Error code: %d</string>
+    <string name="web_title">Loading webpage...</string>
+    <string name="login_register">Register</string>
+    <string name="login_forget">Forgot password?</string>
+    <string name="login_text">Log in</string>
+    <string name="open_sliding_menu">Open side menu</string>
+    <string name="close_sliding_menu">Close side menu</string>
+    <string name="setting_title">Settings</string>
+    <string name="setting_language_switchover">Switch Language</string>
+    <string name="setting_language_simple">Simplified Chinese</string>
+    <string name="setting_language_complex">Traditional Chinese</string>
+    <string name="setting_language_english">English</string>
+    <string name="setting_language_system">Follow System</string>
+
+    <string name="setting_update">Check for Updates</string>
+
+    <string name="setting_update_content">Bug Fixes\nUser Experience Optimization</string>
+    <string name="setting_password">Change Password</string>
+    <string name="setting_face_login">Face login</string>
+
+    <string name="setting_phone">Change Phone</string>
+    <string name="setting_auto">Auto Login</string>
+    <string name="setting_cache">Clear Cache</string>
+    <string name="setting_agreement">Privacy Agreement</string>
+    <string name="setting_about">About Us</string>
+    <string name="setting_exit">Log Out</string>
+
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_policy_content">
+        Thank you for using our application. We highly value your privacy. This privacy policy explains how we collect, use, and disclose personal information. Before using our service, please read this privacy policy.\n
+        By using our service, you agree to the rules of collecting and using information. The personal information we collect is used to provide and improve the service. Unless otherwise specified in this privacy policy, we will not sell or rent your personal information to anyone.\n
+        <b>1. Information Collection and Use</b>\n
+        Our application does not directly collect your personal information, but may use third-party services to collect information to improve our service quality.\n
+        <b>2. Log Data</b>\n
+        We want to inform you that whenever you use our service, we may collect information related to your device (via third-party services). This log data may include your device\'s Internet Protocol ("IP") address, device name, operating system version, the time and date of using our service, and other statistics.\n
+        <b>3. Cookies</b>\n
+        Cookies are files with small amounts of data, which are commonly used as anonymous unique identifiers. This data is sent from your browser to our website and stored on your device. Our application does not directly use cookies, but third-party services may use cookies to collect information about your use of our service.\n
+        <b>4. Service Providers</b>\n
+        We may employ third-party companies and individuals to facilitate our service ("Service Providers"), provide services on our behalf, perform services related to the service, or assist us in analyzing how our service is used.\n
+        <b>5. Security</b>\n
+        We take the protection of your personal information very seriously, but please remember that no method of electronic transmission or electronic storage over the Internet is 100% secure. Although we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.\n
+        <b>6. Contact Us</b>\n
+        If you have any questions or suggestions about this privacy policy, please feel free to contact us via email.\n
+    </string>
+    <string name="common_qq_email">2028751281\u0040QQ.com</string>
+    <string name="common_google_email">tengdaolin5\u0040gmail.com</string>
+    <string name="common_phone">17769443613</string>
+    <string name="about">About</string>
+    <string name="about_title">%1$s%2$s</string>
+    <string name="about_app_name">@string/app_name</string>
+    <string name="about_copyright">Copyright © 2023 &#8211; 2030</string>
+    <string name="about_phone">Customer Service Hotline</string>
+    <string name="about_email">%1$s Official Email</string>
+    <string name="about_copy">Click to Copy</string>
+    <string name="about_dial">Click to Dial</string>
+    <string name="about_word">Unlock the door of knowledge, enjoy the journey of learning</string>
+
+
+    <string name="update_title">New Version Found</string>
+    <string name="update_title_2">No Updates Available</string>
+    <string name="update_content">Update Content</string>
+    <string name="update_no">Remind Me Later</string>
+    <string name="update_yes">Update Now</string>
+    <string name="update_permission_hint">Permission must be granted before normal download and update</string>
+    <string name="update_status_start">Downloading</string>
+    <string name="update_status_running">Downloading %d%%</string>
+    <string name="update_status_successful">Download complete, click to install</string>
+    <string name="update_status_failed">Download failed, click to retry</string>
+    <string name="update_no_update">Current version is up to date</string>
+    <string name="update_notification_channel_id">update</string>
+    <string name="update_notification_channel_name">Update Notification</string>
+    <string name="safe_title">Identity Verification</string>
+    <string name="common_phone_input_hint">Please enter your phone number</string>
+    <string name="common_phone_input_error">Incorrect phone number entered</string>
+    <string name="common_password_input_error">Please enter password</string>
+    <string name="common_password_input_unlike">The two passwords entered do not match, please re-enter</string>
+    <string name="common_code_input_hint">Please enter verification code</string>
+    <string name="common_code_input_original_password">Please enter the original password</string>
+    <string name="common_code_error_original_password">The original password is incorrect, please re-enter it!!!</string>
+    <string name="common_code_send">Send Code</string>
+    <string name="common_code_send_hint">Verification code sent, please check</string>
+    <string name="common_code_error_hint">Incorrect verification code, please check</string>
+    <string name="common_step_next">Next</string>
+    <string name="common_step_complete">Complete</string>
+    <string name="common_step_commit">Submit</string>
+    <string name="phone_reset_title">Set Phone Number</string>
+    <string name="phone_reset_change_hint">Next time, please log in using the newly changed phone number</string>
+    <string name="phone_reset_commit">Bind Now</string>
+    <string name="phone_reset_commit_succeed">Binding Successful</string>
+    <string name="password_reset_title">Set Login Password</string>
+    <string name="password_reset_phone_hint1">Set a 6-18 character login password</string>
+    <string name="password_reset_phone_hint2">Enter the password again</string>
+    <string name="password_reset_input_error">The two passwords entered do not match, please re-enter</string>
+    <string name="password_reset_success">Password changed successfully</string>
+    <string name="password_forget_title">Forget Password</string>
+    <string name="strength_weak">Weak</string>
+    <string name="strength_medium">Medium</string>
+    <string name="strength_strong">Strong</string>
+    <string name="password_text">Password Strength</string>
+    <string name="password_strength">%1$s%2$s</string>
+
+
+    <!--single/dual camera register&recognize page-->
+
+    <string name="switch_camera">switch camera</string>
+    <string name="switch_camera_failed">switch camera failed</string>
+    <string name="notice_change_detect_degree">camera switched, if no face detected, please change face detect degree in homepage</string>
+    <string name="recognize_failed_notice">DENIED:%s</string>
+    <string name="recognize_success_notice">PASS:%s</string>
+    <string name="low_confidence_level">face low confidence level</string>
+    <string name="specific_engine_init_failed">%s init failed, code is:%d</string>
+    <string name="liveness_detect">liveness detect</string>
+    <string name="camera_rgb">RGB CAMERA</string>
+    <string name="camera_ir">IR CAMERA</string>
+    <string name="camera_rgb_preview_size">RGB CAMERA\n%dx%d</string>
+    <string name="camera_ir_preview_size">IR CAMERA\n%dx%d</string>
+    <string name="camera_error_notice">\npossible reason:open two cameras at the same time is not allowed on this device</string>
+    <string name="draw_ir_rect_mirror_horizontal">draw IR face rect mirror horizontal</string>
+    <string name="draw_ir_rect_mirror_vertical">draw IR face rect mirror vertical</string>
+
+
+    <!--global get picture failed notification-->
+    <string name="get_picture_failed">failed to get picture!</string>
+
+    <!--global permission denied notification-->
+    <string name="permission_denied">permission denied!</string>
+
+    <!--global init failed notification-->
+    <string name="init_failed">init failed,code is %d</string>
+    <string name="engine_not_initialized">engine not initialized! code is %d</string>
+    <string name="face_recognition">Face Recognition</string>
+
+
+
+    <!--batch process-->
+
+    <string name="cancel">Cancel</string>
+    <string name="batch_process_notification_register">please put the images that need to register into directory \nsdcard/arcfacedemo/register</string>
+    <string name="batch_process_no_face_need_to_delete">no face need to delete</string>
+    <string name="batch_process_confirm_delete">delete those %d images and face features?</string>
+    <string name="batch_process_batch_register">batch register</string>
+    <string name="batch_process_notification">notification</string>
+    <string name="batch_process_clear_faces">clear faces</string>
+    <string name="batch_process_path_is_not_exists">path \n%s\n is not exists</string>
+    <string name="batch_process_path_is_not_dir">path \n%s\n is not a directory</string>
+    <string name="batch_process_processing_please_wait">process start,please wait</string>
+    <string name="batch_process_finished_info">process finished!\ntotal count =  %d \nsuccess count = %d \nfailed count = %d \nfailed images are in directory \' %s \'</string>
+
+</resources>
+

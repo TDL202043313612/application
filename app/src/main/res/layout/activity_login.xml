@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.applications.view.SkinNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_lr_info_bg"
+    tools:context=".activity.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_from_bottom"
+        tools:layoutAnimation="@null">
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginLeft="-130dp"-->
+<!--            android:layout_marginBottom="-150dp"-->
+<!--            -->
+<!--            android:background="@drawable/shadow_2" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/homepage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/skin_text"-->
+<!--            android:layout_marginLeft="@dimen/dp_10"-->
+<!--            android:layout_marginTop="@dimen/dp_10"-->
+<!--            android:textSize="@dimen/sp_18"-->
+<!--            android:text="@string/back_homepage"-->
+<!--            />-->
+        <com.hjq.bar.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            app:barStyle="transparent"
+            app:leftIcon="@null"
+            app:leftTitle="@string/back_homepage"
+            app:leftTitleColor="@color/common_accent_color"
+            app:leftTitleSize="@dimen/sp_17"
+            app:rightBackground="@null"
+            app:rightTitle="@string/login_register"
+            app:rightTitleColor="@color/common_accent_color"
+            app:rightTitleSize="@dimen/sp_17"
+            app:title="" />
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_329dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login4"/>
+
+        <LinearLayout
+            android:id="@+id/login_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_230dp"
+                android:layout_marginLeft="@dimen/dimen_18dp"
+                android:layout_marginTop="@dimen/dimen_278dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:background="@drawable/shape_login_form"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_43dp"
+                    android:paddingRight="@dimen/dimen_31dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:src="@drawable/account" />
+
+                    <com.hjq.widget.view.ClearEditText
+                        android:id="@+id/et_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/account_hint"
+                        android:text="root"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+                </LinearLayout>
+
+
+                <View
+                    style="@style/HorizontalLineStyle"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginHorizontal="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dimen_23dp"
+                    android:layout_marginBottom="@dimen/dimen_23dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_43dp"
+                    android:paddingRight="@dimen/dimen_31dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:src="@drawable/pwd" />
+
+                    <com.hjq.widget.view.PasswordEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/password_hint"
+                        android:text="123456"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_login_agreement_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/tv_login_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_40"
+                        android:layout_marginEnd="5dp"
+                        android:background="@null"
+                        app:buttonCompat="@drawable/checkbox_selector" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="已阅读并同意"
+                        android:textColor="@color/panda"
+                        android:textSize="@dimen/sp_13" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_login_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:text="Pursuit隐私保护协议"
+                        android:textColor="@color/common_accent_color"
+                        android:textSize="@dimen/sp_13" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_5">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tx_face_recognition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/face_recognition"
+                        android:textColor="@color/common_accent_color"
+                        android:textSize="@dimen/sp_15" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_login_forget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/login_forget"
+                        android:textColor="@color/common_accent_color"
+                        android:textSize="@dimen/sp_15" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_67dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_18"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:gravity="center">
+                    <!--            <Button-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="@dimen/dimen_55dp"-->
+                    <!--                android:id="@+id/btn_login"-->
+                    <!--                android:textSize="24sp"-->
+                    <!--                android:text="@string/login"-->
+                    <!--                android:textColor="@color/white"-->
+                    <!--                android:background="@drawable/shape_login_btn"-->
+                    <!--                android:layout_marginLeft="@dimen/dimen_18dp"-->
+                    <!--                android:layout_marginRight="@dimen/dimen_18dp"-->
+                    <!--                android:layout_marginTop="@dimen/dimen_67dp"-->
+                    <!--                android:stateListAnimator="@null" />-->
+                    <!--            <ProgressBar-->
+                    <!--                android:id="@+id/progressBar"-->
+                    <!--                android:layout_width="30dp"-->
+                    <!--                android:layout_height="30dp"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:visibility="invisible"-->
+                    <!--                android:layout_marginTop="35dp"-->
+                    <!--                android:layout_marginRight="50dp"-->
+
+                    <!--                />-->
+<!--                    <com.hjq.widget.view.SubmitButton-->
+<!--                        android:id="@+id/btn_login"-->
+<!--                        style="@style/LoginButtonStyle2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="85dp"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:text="➡"-->
+<!--                        android:textSize="24sp" />-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/img_face_recognition"-->
+<!--                        android:layout_width="85dp"-->
+<!--                        android:layout_height="85dp"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_marginRight="@dimen/dp_20"-->
+<!--                        android:layout_toLeftOf="@+id/btn_login"-->
+<!--                        android:src="@drawable/face_recognition_icon" />-->
+
+                    <com.hjq.widget.view.SubmitButton
+                        android:id="@+id/btn_login"
+                        style="@style/LoginButtonStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="85dp"
+                        android:text="➡"
+                        android:textSize="24sp" />
+
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/btn_login"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_marginTop="@dimen/dp_10"-->
+<!--                        android:src="@drawable/shadow_rect"-->
+<!--                        android:visibility="visible" />-->
+
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--            <Button-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="@dimen/dimen_55dp"-->
+                    <!--                android:id="@+id/btn_login"-->
+                    <!--                android:textSize="24sp"-->
+                    <!--                android:text="@string/login"-->
+                    <!--                android:textColor="@color/white"-->
+                    <!--                android:background="@drawable/shape_login_btn"-->
+                    <!--                android:layout_marginLeft="@dimen/dimen_18dp"-->
+                    <!--                android:layout_marginRight="@dimen/dimen_18dp"-->
+                    <!--                android:layout_marginTop="@dimen/dimen_67dp"-->
+                    <!--                android:stateListAnimator="@null" />-->
+                    <!--            <ProgressBar-->
+                    <!--                android:id="@+id/progressBar"-->
+                    <!--                android:layout_width="30dp"-->
+                    <!--                android:layout_height="30dp"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:visibility="invisible"-->
+                    <!--                android:layout_marginTop="35dp"-->
+                    <!--                android:layout_marginRight="50dp"-->
+
+                    <!--                />-->
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/btn_register"-->
+                    <!--                        style="@style/RegisterButtonStyle"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="@dimen/dp_55"-->
+                    <!--                        android:layout_marginLeft="@dimen/dimen_18dp"-->
+                    <!--                        android:layout_marginTop="@dimen/dimen_25dp"-->
+                    <!--                        android:layout_marginRight="@dimen/dimen_18dp"-->
+                    <!--                        android:text="@string/register_forward"-->
+                    <!--                        android:textSize="24sp" />-->
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</com.example.applications.view.SkinNestedScrollView>

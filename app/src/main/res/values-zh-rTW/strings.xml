@@ -1,0 +1,263 @@
+<resources>
+    <string name="app_name">Pursuit</string>
+    <string name="back_homepage">首頁</string>
+    <string name="login">登陸</string>
+    <string name="login_back">
+        &lt;-
+                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        登錄
+                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </string>
+    <string name="register">註冊</string>
+    <string name="register_forward">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        註冊
+                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        -&gt;
+    </string>
+    <string name="account_hint">請輸入帳號</string>
+    <string name="phone_hint">請輸入手機號碼</string>
+    <string name="verification_hint">請輸入驗證碼</string>
+    <string name="password_hint">請輸入密碼</string>
+    <string name="re_password_hint">請再次輸入密碼</string>
+    <string name="hello_blank_fragment">你好，空白片段</string>
+    <string name="splash_title">學習視頻軟體</string>
+    <string name="splash_desc">學習就在此刻</string>
+    <string name="splash_build_time">建構於 %s</string>
+    <string name="run_login">登錄中...</string>
+
+    <string name="news_title">資訊</string>
+    <string name="home_search_hint">搜尋你喜歡的影片</string>
+
+    <string name="my_welcome_text">歡迎來到此平台</string>
+    <string name="my_title_one">閱讀</string>
+    <string name="my_title_two">點贊</string>
+    <string name="my_title_three">評論</string>
+    <string name="my_title_four">分享</string>
+    <string name="my_collect_name">我的收藏</string>
+    <string name="my_skin_name">換膚</string>
+
+
+    <!-- toast-->
+    <string name="toast_no_data">暫無數據</string>
+    <string name="toast_no_more_data">沒有更多數據</string>
+    <string name="toast_error_network_location">定位失敗或網絡異常！！</string>
+    <string name="toast_empty_account">賬號不能為空！！</string>
+    <string name="toast_empty_password">密碼不能為空！！</string>
+    <string name="toast_error_network">當前網絡不可用，請檢查網絡！！</string>
+    <string name="toast_not_match_password">兩次密碼不一致！！</string>
+    <string name="toast_already_exist_account">賬號已存在！！</string>
+    <string name="toast_back_application">再按壹次退出</string>
+    <string name="toast_success_copy">複製成功</string>
+
+    <!-- MessageDialog -->
+    <string name="message_dialog_clear_title">清理</string>
+    <string name="message_dialog_clear_content">清空緩存文件？</string>
+
+    <string-array name="home_sliding_tab_title">
+        <item>考研</item>
+        <item>IT</item>
+        <item>四六級</item>
+        <item>考公</item>
+        <item>教資</item>
+        <item>高考</item>
+        <item>實用英語</item>
+        <item>法考</item>
+    </string-array>
+
+
+    <string-array name="home_common_tab_title">
+        <item>首頁</item>
+        <item>資訊</item>
+        <item>我的</item>
+    </string-array>
+
+
+
+    <string name="common_network_error">當前網絡不可用，請檢查網絡設置</string>
+    <string name="personal_data_title">個人資料</string>
+    <string name="personal_data_head">頭像</string>
+    <string name="personal_data_id">用戶ID</string>
+    <string name="personal_data_name">昵稱</string>
+    <string name="personal_data_name_hint">設置昵稱</string>
+
+    <string name="personal_data_leave_message">留言</string>
+    <string name="personal_data_leave_message_hint">設置留言</string>
+
+
+    <string name="personal_data_address">地區</string>
+    <string name="personal_data_address_hint">請選擇</string>
+    <string name="personal_data_phone">手機號碼</string>
+    <string name="personal_data_phone_hint">立即綁定</string>
+    <string name="common_unknown_error">未知錯誤</string>
+    <string name="image_crop_error_not_support">裁剪失敗，當前手機不支持裁剪圖片</string>
+    <string name="address_title">請選擇地區</string>
+    <string name="address_hint">請選擇</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_confirm">確定</string>
+    <string name="status_layout_error_network">網絡錯誤，請重試</string>
+    <string name="status_layout_retry">重試</string>
+    <string name="image_select_title">圖片選擇</string>
+    <string name="camera_launch_fail">無法啟動相機</string>
+    <string name="camera_image_error">目標地址錯誤</string>
+    <string name="image_select_error">無法選擇，該圖片已被刪除</string>
+    <string name="image_select_max_hint">本次最多只能選擇 %d 張圖片</string>
+    <string name="image_select_all">所有圖片</string>
+    <string name="image_select_total">共 %d 張</string>
+    <string name="status_layout_no_data">空空如也</string>
+    <string name="status_layout_error_request">請求出錯，請重試</string>
+    <string name="common_permission_alert">授權提醒</string>
+    <string name="common_permission_fail_1">授權失敗，請正確授予權限</string>
+    <string name="common_permission_fail_2">獲取權限失敗，請手動授予權限</string>
+    <string name="common_permission_fail_3">獲取權限失敗，請手動授予%s</string>
+    <string name="common_permission_fail_4">沒有授予後台定位權限，請您選擇"始終允許"</string>
+    <string name="common_permission_goto">前往授權</string>
+    <string name="common_permission_location_background">後台定位權限</string>
+    <string name="common_permission_storage">存儲權限</string>
+    <string name="common_permission_camera">相機權限</string>
+    <string name="common_permission_microphone">麥克風權限</string>
+    <string name="common_permission_location">定位權限</string>
+    <string name="common_permission_contacts">通訊錄權限</string>
+    <string name="common_permission_phone">電話權限</string>
+    <string name="common_permission_calendar">日曆權限</string>
+    <string name="common_permission_call_log">通話記錄權限</string>
+    <string name="common_permission_sensors">身體傳感器權限</string>
+    <string name="common_permission_activity_recognition">健身運動權限</string>
+    <string name="common_permission_sms">短信權限</string>
+    <string name="common_permission_install">安裝應用權限</string>
+    <string name="common_permission_notification">通知權限</string>
+    <string name="common_permission_window">懸浮窗權限</string>
+    <string name="common_permission_setting">系統設置權限</string>
+    <string name="http_loading">加載中...</string>
+    <string name="http_unknown_error">請求出錯，未知錯誤</string>
+    <string name="http_token_error">登錄失效，請重新登錄</string>
+    <string name="http_data_explain_error">數據解析異常，請稍後</string>
+    <string name="http_server_out_time">服務器請求超時，請稍後再試</string>
+    <string name="http_network_error">請求失敗，請檢查網絡設置</string>
+    <string name="http_response_error">服務器響應異常，請稍後再試</string>
+    <string name="http_server_error">服務器連接異常，請稍後再試</string>
+    <string name="http_request_cancel">請求被中斷，請重試</string>
+    <string name="common_network_hint">當前沒有網絡連接，請檢查網絡設置</string>
+    <string name="common_crash_hint">應用出了點小意外，正在重新啟動</string>
+    <string name="common_no_more_data">沒有更多數據了</string>
+    <string name="common_web_ssl_error_title">當前網站安全證書已過期或不可信\n是否繼續瀏覽</string>
+    <string name="common_web_ssl_error_allow">繼續瀏覽</string>
+    <string name="common_web_ssl_error_reject">返回上一頁</string>
+    <string name="common_web_call_phone_title">當前號碼 %s</string>
+    <string name="common_web_call_phone_allow">撥打</string>
+    <string name="common_web_call_phone_reject">取消</string>
+    <string name="common_web_location_permission_title">當前網站需要獲取您的地理位置</string>
+    <string name="common_web_location_permission_allow">授予</string>
+    <string name="common_web_location_permission_reject">拒絕</string>
+    <string name="video_select_title">視頻選擇</string>
+    <string name="video_select_all">所有視頻</string>
+    <string name="video_select_total">共 %d 個</string>
+    <string name="video_select_max_hint">本次最多只能選擇 %d 個視頻</string>
+    <string name="video_select_error">無法選中，該視頻已經被刪除</string>
+    <string name="common_loading">加載中...</string>
+    <string name="common_video_error_not_support">該視頻不適合在此設備上播放</string>
+    <string name="common_video_error_unknown">無法播放此視頻</string>
+    <string name="common_video_error_supplement">錯誤類型：%d，錯誤代碼：%d</string>
+    <string name="web_title">正在加載網頁...</string>
+    <string name="login_register">註冊</string>
+    <string name="login_forget">忘記密碼？</string>
+    <string name="login_text">登錄</string>
+    <string name="open_sliding_menu">打開側邊欄</string>
+    <string name="close_sliding_menu">關閉側邊欄</string>
+    <string name="setting_title">設置</string>
+    <string name="setting_language_switchover">語言切換</string>
+    <string name="setting_language_simple">簡體中文</string>
+    <string name="setting_language_complex">繁體中文</string>
+    <string name="setting_language_english">英語</string>
+    <string name="setting_language_system">跟隨系統</string>
+    <string name="setting_update">檢查更新</string>
+    <string name="setting_update_content">修復Bug<br />優化用戶體驗</string>
+    <string name="setting_password">修改密碼</string>
+    <string name="setting_face_login">人臉登錄</string>
+    <string name="setting_phone">修改手機</string>
+    <string name="setting_auto">自動登錄</string>
+    <string name="setting_cache">清空緩存</string>
+    <string name="setting_agreement">隱私協議</string>
+    <string name="setting_about">關於我們</string>
+    <string name="setting_exit">退出登錄</string>
+    <string name="privacy_title">隱私協議</string>
+    <string name="privacy_policy_content">
+        感謝您使用我們的應用程式。我們非常重視您的隱私。本隱私政策解釋了我們收集、使用和披露個人資訊的方式。在使用我們的服務之前，請閱讀本隱私政策。\n
+        如果您使用我們的服務，即表示您同意收集和使用資訊的規則。我們收集的個人資訊用於提供和改進服務。除非本隱私政策另有規定，否則我們不會向任何人出售或出租您的個人資訊。\n
+        <b>1. 資訊收集與使用</b>\n
+        我們的應用程式不會直接收集您的個人資訊，但可能會使用第三方服務來收集資訊，以提高我們的服務質量。\n
+        <b>2. 日誌數據</b>\n
+        我們想通知您，每當您使用我們的服務時，我們可能會收集與您的裝置相關的資訊（通過第三方服務）。此日誌數據可能包括您的裝置網際網路協定 ("IP") 地址、裝置名稱、作業系統版本、使用我們的服務的時間和日期以及其他統計資訊。\n
+        <b>3. Cookies</b>\n
+        Cookies 是包含小量資料的檔案，通常用作匿名唯一識別符。這些資料通過您的瀏覽器從我們的網站發送，並存儲在您的裝置上。我們的應用程式不直接使用 Cookies，但第三方服務可能會使用 Cookies 來收集有關您使用我們服務的資訊。\n
+        <b>4. 服務提供商</b>\n
+        我們可能僱用第三方公司和個人來促進我們的服務 ("服務提供商")、提供服務代表我們進行服務、執行與服務相關的服務，或協助我們分析服務的使用方式。\n
+        <b>5. 安全性</b>\n
+        我們非常重視對您的個人資訊的保護，但請記住，因特網的電子傳輸方式或電子存儲方式都不是 100% 安全的。雖然我們努力使用商業上可接受的方式來保護您的個人資訊，但我們無法保證其絕對安全性。\n
+        <b>6. 聯繫我們</b>\n
+        如果您對本隱私政策有任何疑問或建議，請隨時通過電子郵件與我們聯繫。
+    </string>
+    <string name="sliding_menu_setting_name">設置</string>
+
+    <string name="common_qq_email">2028751281@QQ.com</string>
+    <string name="common_google_email">tengdaolin5@gmail.com</string>
+    <string name="common_phone">17769443613</string>
+    <string name="about">關於</string>
+    <!-- 以下為變數，無法直接翻譯 -->
+    <string name="about_title">%1$s%2$s</string>
+    <string name="about_app_name">@string/app_name</string>
+    <string name="about_copyright">Copyright © 2023 &#8211; 2030</string>
+    <string name="about_phone">客戶服務熱線</string>
+    <!-- 以下為變數，無法直接翻譯 -->
+    <string name="about_email">%1$s官方郵箱</string>
+    <string name="about_copy">點擊複製</string>
+    <string name="about_dial">點擊撥打</string>
+    <string name="about_word">解鎖知識之門，暢遊學海盡興</string>
+
+
+    <string name="update_title">發現新版本</string>
+    <string name="update_title_2">暫無更新</string>
+    <string name="update_content">更新內容</string>
+    <string name="update_no">下次再說</string>
+    <string name="update_yes">立即更新</string>
+    <string name="update_permission_hint">必須先要授予權限才能正常下載更新哦</string>
+    <string name="update_status_start">正在下載</string>
+    <string name="update_status_running">下載中 %d%%</string>
+    <string name="update_status_successful">下載完成，點擊安裝</string>
+    <string name="update_status_failed">下載失敗，點擊重試</string>
+    <string name="update_no_update">當前已是最新版本</string>
+    <string name="update_notification_channel_id">update</string>
+    <string name="update_notification_channel_name">升級通知</string>
+    <string name="safe_title">身份驗證</string>
+    <string name="common_phone_input_hint">請輸入手機號碼</string>
+    <string name="common_phone_input_error">手機號輸入不正確</string>
+    <string name="common_password_input_error">請輸入密碼</string>
+    <string name="common_password_input_unlike">兩次密碼輸入不一致，請重新輸入</string>
+    <string name="common_code_input_hint">請輸入驗證碼</string>
+    <string name="common_code_input_original_password">請輸入原密碼</string>
+    <string name="common_code_error_original_password">原密碼錯誤，請重新輸入！！！</string>
+
+    <string name="common_code_send">發送驗證碼</string>
+    <string name="common_code_send_hint">驗證碼已發送，請注意查收</string>
+    <string name="common_code_error_hint">驗證碼錯誤，請檢查輸入</string>
+    <string name="common_step_next">下一步</string>
+    <string name="common_step_complete">完成</string>
+    <string name="common_step_commit">提交</string>
+    <string name="phone_reset_title">設置手機號</string>
+    <string name="phone_reset_change_hint">下次登入請使用更換後的新手機號登入</string>
+    <string name="phone_reset_commit">立即綁定</string>
+    <string name="phone_reset_commit_succeed">綁定成功</string>
+    <string name="password_reset_title">設置登入密碼</string>
+    <string name="password_reset_phone_hint1">設置6&#8211;18位登入密碼</string>
+    <string name="password_reset_phone_hint2">重新輸入一次密碼</string>
+    <string name="password_reset_input_error">兩次密碼輸入不一致，請重新輸入</string>
+    <string name="password_reset_success">修改成功</string>
+    <string name="password_forget_title">忘記密碼</string>
+    <string name="strength_weak">較弱</string>
+    <string name="strength_medium">中等</string>
+    <string name="strength_strong">強</string>
+    <string name="password_text">密碼強度</string>
+    <!-- password_strength 中包含變數，無法直接翻譯 -->
+    <string name="password_strength">%1$s%2$s</string>
+
+    <string name="face_recognition">人臉識別</string>
+</resources>

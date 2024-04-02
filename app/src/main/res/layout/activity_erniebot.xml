@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ErnieBotActivity"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/main_layout">
+
+
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Welcome to easy Ernie Bot\n try it on now"
+        android:textColor="@color/light_gray"
+        android:textSize="24sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/title_bar"
+        android:background="#00ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@drawable/e_icon_128"
+        app:leftIconHeight="35dp"
+        app:leftIconWidth="35dp"
+        app:title="文心一言"
+        app:titleSize="20sp" />
+
+    <RelativeLayout
+       android:id="@+id/bottom_layout"
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/message_image_button"
+            android:background="@drawable/rounded_corner"
+            android:hint="Write here"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray" />
+
+        <ImageButton
+            android:id="@id/message_image_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_send_24"
+            android:padding="8dp" />
+   </RelativeLayout>
+</RelativeLayout>

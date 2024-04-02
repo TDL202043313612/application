@@ -1,0 +1,129 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.hjq.umeng" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="21"
+7-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml
+8        android:targetSdkVersion="30" />
+8-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml
+9
+10    <!-- 共同权限 -->
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:7:5-76
+12-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:7:22-73
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:8:5-79
+13-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:8:22-76
+14
+15    <!-- 友盟统计 -->
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:11:5-75
+16-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:11:22-72
+17
+18    <!-- 友盟社会化 -->
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:14:5-80
+19-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:14:22-77
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:15:5-81
+20-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:15:22-78
+21
+22    <!-- Android 11 软件包可见性适配：https://developer.android.google.cn/about/versions/11/privacy/package-visibility -->
+23    <queries>
+23-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:69:5-74:15
+24
+25        <!-- 手机 QQ 的包名 -->
+26        <package android:name="com.tencent.mobileqq" />
+26-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:71:9-56
+26-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:71:18-53
+27        <!-- 微信的包名 -->
+28        <package android:name="com.tencent.mm" />
+28-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:73:9-50
+28-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:73:18-47
+29    </queries>
+30
+31    <application>
+31-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:17:5-66:19
+32
+33        <!-- 友盟 Key（请在 Gradle 中配置，请不要在此处修改） -->
+34        <meta-data
+35            android:name="UM_KEY"
+35-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:21:13-34
+36            android:value="5cb16d93570df399fd0014e2" />
+36-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:22:13-38
+37
+38        <!-- QQ AppId（请在 Gradle 中配置，请不要在此处修改） -->
+39        <meta-data
+40            android:name="QQ_ID"
+40-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:26:13-33
+41            android:value="101828096" />
+41-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:27:13-37
+42        <!-- QQ Secret（请在 Gradle 中配置，请不要在此处修改） -->
+43        <meta-data
+44            android:name="QQ_SECRET"
+44-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:30:13-37
+45            android:value="9dfd3300c3aa3c4596a07796c64914b2" />
+45-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:31:13-41
+46
+47        <!-- 微信 AppId（请在 Gradle 中配置，请不要在此处修改） -->
+48        <meta-data
+49            android:name="WX_ID"
+49-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:35:13-33
+50            android:value="wxd35706cc9f46114c" />
+50-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:36:13-37
+51        <!-- 微信 Secret（请在 Gradle 中配置，请不要在此处修改） -->
+52        <meta-data
+53            android:name="WX_SECRET"
+53-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:39:13-37
+54            android:value="0c8c7cf831dd135a32b3e395ea459b5a" />
+54-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:40:13-41
+55
+56        <!-- 友盟社会化 -->
+57
+58
+59        <!-- QQ 回调 -->
+60        <activity
+60-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:45:9-58:20
+61            android:name="com.tencent.tauth.AuthActivity"
+61-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:46:13-58
+62            android:launchMode="singleTask"
+62-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:47:13-44
+63            android:noHistory="true"
+63-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:48:13-37
+64            tools:node="replace" >
+64-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:49:13-33
+65            <intent-filter>
+65-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:50:13-57:29
+66                <action android:name="android.intent.action.VIEW" />
+66-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:51:17-69
+66-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:51:25-66
+67
+68                <category android:name="android.intent.category.DEFAULT" />
+68-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:53:17-76
+68-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:53:27-73
+69                <category android:name="android.intent.category.BROWSABLE" />
+69-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:54:17-78
+69-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:54:27-75
+70
+71                <data android:scheme="tencent101828096" />
+71-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:56:23-55
+72            </intent-filter>
+73        </activity>
+74        <activity
+74-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:60:9-64:36
+75            android:name="com.tencent.connect.common.AssistActivity"
+75-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:61:13-69
+76            android:configChanges="orientation|keyboardHidden"
+76-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:62:13-63
+77            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+77-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:63:13-72
+78            tools:node="replace" />
+78-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:64:13-33
+79    </application>
+80
+81</manifest>

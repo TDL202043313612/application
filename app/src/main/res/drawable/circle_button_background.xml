@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 禁用状态 -->
+    <item android:state_enabled="false">
+        <shape
+            android:shape="oval">
+            <solid android:color="@color/common_button_disable_color"/> <!-- 设置背景颜色为红色 -->
+            <size android:width="50dp" android:height="50dp"/> <!-- 设置按钮的大小 -->
+            <corners android:radius="25dp"/> <!-- 设置圆角半径，对于圆形，这个值应该是宽度和高度的一半 -->
+        </shape>
+    </item>
+    <!-- 按压状态 -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <corners android:radius="25dp"/>
+            <size android:width="50dp" android:height="50dp"/> <!-- 设置按钮的大小 -->
+            <solid android:color="#AA013A9A" />
+        </shape>
+    </item>
+
+    <!-- 焦点状态 -->
+    <item android:state_focused="true">
+        <shape android:shape="oval">
+            <corners android:radius="25dp"/>
+            <size android:width="50dp" android:height="50dp"/> <!-- 设置按钮的大小 -->
+            <solid android:color="@color/common_button_pressed_color" />
+        </shape>
+    </item>
+
+    <!-- 默认状态 -->
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="25dp"/>
+            <size android:width="50dp" android:height="50dp"/> <!-- 设置按钮的大小 -->
+            <solid android:color="@color/common_accent_color" />
+        </shape>
+    </item>
+</selector>
+
+
+
+

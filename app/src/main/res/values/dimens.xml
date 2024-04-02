@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_90dp">90dp</dimen>
+    <dimen name="dimen_329dp">329dp</dimen>
+    <dimen name="dimen_230dp">230dp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
+    <dimen name="dimen_278dp">278dp</dimen>
+    <dimen name="dimen_43dp">43dp</dimen>
+    <dimen name="dimen_31dp">31dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_23dp">23dp</dimen>
+    <dimen name="dimen_55dp">55dp</dimen>
+    <dimen name="dimen_67dp">67dp</dimen>
+    <dimen name="dimen_250dp">250dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="line_size">1px</dimen>
+    <dimen name="dialog_ui_round_size">15dp</dimen>
+    <dimen name="button_circle_size">999dp</dimen>
+    <dimen name="shadow_width">200dp</dimen>
+    <dimen name="slidingmenu_offset">150dp</dimen>
+    <dimen name="dimen_350dp">350dp</dimen>
+    <dimen name="dimen_450dp">450dp</dimen>
+
+    <dimen name="dime_400dp">400dp</dimen>
+    <dimen name="dimen_200dp">200dp</dimen>
+    <dimen name="dimen_150dp">150dp</dimen>
+    <dimen name="common_bottom_margin">20dp</dimen>
+</resources>

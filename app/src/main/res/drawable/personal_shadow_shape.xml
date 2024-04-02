@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#80CCCCCC"/> <!-- 阴影颜色，半透明黑色 -->
+    <corners android:radius="10dp"/> <!-- 圆角，与基础形状匹配 -->
+    <size android:width="120dp" android:height="60dp"/> <!-- 阴影大小，可能比基础形状大 -->
+    <stroke android:width="0dp"/>
+</shape>

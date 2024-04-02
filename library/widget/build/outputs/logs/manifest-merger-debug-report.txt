@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml:1:1-38
+INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml:1:1-38
+INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml:1:1-38
+	package
+		ADDED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml:1:11-35
+		INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml:1:1-38
+uses-sdk
+INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/AndroidStudioProjects2/applications/library/widget/src/main/AndroidManifest.xml

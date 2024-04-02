@@ -1,0 +1,57 @@
+apply plugin : 'com.android.library'
+apply from : '../../common.gradle'
+
+android {
+
+    defaultConfig {
+        // 模块混淆配置
+        consumerProguardFiles 'proguard-umeng.pro'
+
+
+//        // 友盟 AppKey
+//        UMENG_APP_KEY = "5cb16d93570df399fd0014e2"
+//        // QQ AppId
+//        QQ_APP_ID = "101828096"
+//        // QQ Secret
+//        QQ_APP_SECRET = "9dfd3300c3aa3c4596a07796c64914b2"
+//        // 微信 AppId
+//        WX_APP_ID = "wxd35706cc9f46114c"
+//        // 微信 Secret
+//        WX_APP_SECRET = "0c8c7cf831dd135a32b3e395ea459b5a"
+
+        // 构建配置字段
+        buildConfigField('String', 'UM_KEY', '\"' + "5cb16d93570df399fd0014e2" + '\"')
+        buildConfigField('String', 'QQ_ID', '\"' + "101828096" + '\"')
+        buildConfigField('String', 'QQ_SECRET', '\"' + "9dfd3300c3aa3c4596a07796c64914b2" + '\"')
+        buildConfigField('String', 'WX_ID', '\"' + "wxd35706cc9f46114c" + '\"')
+        buildConfigField('String', 'WX_SECRET', '\"' + "0c8c7cf831dd135a32b3e395ea459b5a" + '\"')
+
+        // 清单占位符
+        addManifestPlaceholders([
+                'UM_KEY' : "5cb16d93570df399fd0014e2",
+                'QQ_ID' : "101828096",
+                'QQ_SECRET' : "9dfd3300c3aa3c4596a07796c64914b2",
+                'WX_ID' : "wxd35706cc9f46114c",
+                'WX_SECRET' : "0c8c7cf831dd135a32b3e395ea459b5a"
+        ])
+    }
+}
+
+// 友盟统计集成文档：https://developer.umeng.com/docs/119267/detail/118584
+// 友盟社会化集成文档：https://developer.umeng.com/docs/128606/detail/193879
+dependencies {
+    // 友盟公共库
+    api 'com.umeng.umsdk:common:9.4.0'
+    api 'com.umeng.umsdk:asms:1.2.3'
+    // 友盟分享库
+    api 'com.umeng.umsdk:share-core:7.1.5'
+    // 友盟微信分享
+    api 'com.umeng.umsdk:share-wx:7.1.5'
+    // 友盟 QQ 分享
+    api 'com.umeng.umsdk:share-qq:7.1.5'
+
+    // QQ 组件：https://wiki.open.qq.com/wiki/QQ%E7%94%A8%E6%88%B7%E8%83%BD%E5%8A%9B
+    api 'com.tencent.tauth:qqopensdk:3.53.0'
+    // 微信组件：https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/Android.html
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.7.9'
+}

@@ -1,0 +1,17 @@
+dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "applications"
+include ':app'
+include ':library:base'
+include ':library:widget'
+include ':library:umeng'
+include ':library:sliding_menu'

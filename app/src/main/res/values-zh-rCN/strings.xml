@@ -1,0 +1,369 @@
+<resources>
+    <string name="app_name">Pursuit</string>
+    <string name="back_homepage">首页</string>
+    <string name="login">登陆</string>
+
+    <string name="login_back">
+        &lt;-
+                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        登陆
+                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </string>
+    <string name="register">注册</string>
+    <string name="register_forward">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        注册
+                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        -&gt;
+    </string>
+    <string name="account_hint">请输入账号</string>
+    <string name="phone_hint">请输入手机号码</string>
+    <string name="verification_hint">请输入验证码</string>
+
+    <string name="password_hint">请输入密码</string>
+    <string name="re_password_hint">请再次输入密码</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_title">学习视频软件</string>
+    <string name="splash_desc">学习就在此刻</string>
+    <string name="splash_build_time">构建于 %s</string>
+    <string name="run_login">登陆中...</string>
+    <string name="common_network_error">当前网络不可用，请检查网络设置</string>
+    <string name="news_title">资讯</string>
+    <string name="home_search_hint">搜索你喜欢的视频</string>
+    <string-array name="home_sliding_tab_title">
+        <item>考研</item>
+        <item>IT</item>
+        <item>四六级</item>
+        <item>考公</item>
+        <item>教资</item>
+        <item>高考</item>
+        <item>实用英语</item>
+        <item>法考</item>
+    </string-array>
+    <string-array name="home_common_tab_title">
+        <item>首页</item>
+        <item>资讯</item>
+        <item>我的</item>
+    </string-array>
+
+    <string name="my_welcome_text">欢迎来到此平台</string>
+    <string name="my_title_one">阅读</string>
+    <string name="my_title_two">点赞</string>
+    <string name="my_title_three">评论</string>
+    <string name="my_title_four">分享</string>
+    <string name="my_collect_name">我的收藏</string>
+    <string name="my_skin_name">换肤</string>
+
+
+    <!-- toast  -->
+    <string name="toast_no_data">暂无数据</string>
+    <string name="toast_no_more_data">没有更多数据</string>
+    <string name="toast_error_network_location">定位失败或网络异常！！</string>
+    <string name="toast_empty_account">账号不能为空！！</string>
+    <string name="toast_empty_password">密码不能为空！！</string>
+    <string name="toast_error_network">当前网络不可用，请检查网络！！</string>
+    <string name="toast_not_match_password">两次密码不一致！！</string>
+    <string name="toast_already_exist_account">账号已存在！！</string>
+    <string name="toast_back_application">再按一次退出</string>
+
+    <string name="toast_success_copy">复制成功</string>
+
+    <!-- MessageDialog -->
+    <string name="message_dialog_clear_title">清理</string>
+    <string name="message_dialog_clear_content">清空缓存文件？</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">个人资料</string>
+
+    <string name="personal_data_head">头像</string>
+
+    <string name="personal_data_id">用户ID</string>
+    <string name="personal_data_name">昵称</string>
+    <string name="personal_data_name_hint">设置昵称</string>
+
+    <string name="personal_data_leave_message">留言</string>
+    <string name="personal_data_leave_message_hint">设置留言</string>
+
+    <string name="personal_data_address">地区</string>
+    <string name="personal_data_address_hint">请选择</string>
+
+    <string name="personal_data_phone">手机号码</string>
+    <string name="personal_data_phone_hint">立即绑定</string>
+    <string name="common_unknown_error">未知错误</string>
+    <string name="image_crop_error_not_support">裁剪失败，当前手机不支持裁剪图片</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">请选择地区</string>
+    <string name="address_hint">请选择</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_confirm">确定</string>
+    <string name="status_layout_error_network">网络错误，请重试</string>
+    <string name="status_layout_retry">重试</string>
+    <string name="image_select_title">图片选择</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">无法启动相机</string>
+    <string name="camera_image_error">目标地址错误</string>
+    <string name="image_select_error">无法选中，该图片已经被删除</string>
+    <string name="image_select_max_hint">本次最多只能选择 %d 张图片</string>
+    <string name="image_select_all">所有图片</string>
+    <string name="image_select_total">共 %d 张</string>
+    <string name="status_layout_no_data">空空如也</string>
+    <string name="status_layout_error_request">请求出错，请重试</string>
+
+
+    <string name="common_permission_alert">授权提醒</string>
+    <string name="common_permission_fail_1">授权失败，请正确授予权限</string>
+    <string name="common_permission_fail_2">获取权限失败，请手动授予权限</string>
+    <string name="common_permission_fail_3">获取权限失败，请手动授予%s</string>
+    <string name="common_permission_fail_4">没有授予后台定位权限，请您选择"始终允许"</string>
+    <string name="common_permission_goto">前往授权</string>
+
+    <string name="common_permission_location_background">后台定位权限</string>
+    <string name="common_permission_storage">存储权限</string>
+    <string name="common_permission_camera">相机权限</string>
+    <string name="common_permission_microphone">麦克风权限</string>
+    <string name="common_permission_location">定位权限</string>
+    <string name="common_permission_contacts">通讯录权限</string>
+    <string name="common_permission_phone">电话权限</string>
+    <string name="common_permission_calendar">日历权限</string>
+
+    <string name="common_permission_call_log">通话记录权限</string>
+    <string name="common_permission_sensors">身体传感器权限</string>
+    <string name="common_permission_activity_recognition">健身运动权限</string>
+    <string name="common_permission_sms">短信权限</string>
+
+    <string name="common_permission_install">安装应用权限</string>
+    <string name="common_permission_notification">通知栏权限</string>
+    <string name="common_permission_window">悬浮窗权限</string>
+    <string name="common_permission_setting">系统设置权限</string>
+
+
+    <!-- 网络请求 -->
+    <string name="http_loading">加载中&#8230;</string>
+
+    <string name="http_unknown_error">请求出错，未知错误</string>
+    <string name="http_token_error">登录失效，请重新登录</string>
+    <string name="http_data_explain_error">数据解析异常，请稍后</string>
+    <string name="http_server_out_time">服务器请求超时，请稍后再试</string>
+    <string name="http_network_error">请求失败，请检查网络设置</string>
+    <string name="http_response_error">服务器响应异常，请稍后再试</string>
+    <string name="http_server_error">服务器连接异常，请稍后再试</string>
+    <string name="http_request_cancel">请求被中断，请重试</string>
+
+
+    <string name="common_network_hint">当前没有网络连接，请检查网络设置</string>
+    <string name="common_crash_hint">应用出了点小意外，正在重新启动</string>
+    <string name="common_no_more_data">没有更多数据了</string>
+
+
+    <string name="common_web_ssl_error_title">当前网站安全证书已过期或不可信\n是否继续浏览</string>
+    <string name="common_web_ssl_error_allow">继续浏览</string>
+    <string name="common_web_ssl_error_reject">返回上一页</string>
+
+    <string name="common_web_call_phone_title">当前号码 %s</string>
+    <string name="common_web_call_phone_allow">拨打</string>
+    <string name="common_web_call_phone_reject">取消</string>
+
+
+    <string name="common_web_location_permission_title">当前网站需要获取您的地理位置</string>
+    <string name="common_web_location_permission_allow">授予</string>
+    <string name="common_web_location_permission_reject">拒绝</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">视频选择</string>
+    <string name="video_select_all">所有视频</string>
+
+
+    <string name="video_select_total">共 %d 个</string>
+
+    <string name="video_select_max_hint">本次最多只能选择 %d 个视频</string>
+
+    <string name="video_select_error">无法选中，该视频已经被删除</string>
+    <!-- 通用的 -->
+    <string name="common_loading">加载中&#8230;</string>
+
+    <string name="common_video_error_not_support" formatted="false">该视频不适合在此设备上播放</string>
+    <string name="common_video_error_unknown">无法播放此视频</string>
+    <string name="common_video_error_supplement">错误类型：%d，错误代码：%d</string>
+    <string name="web_title">网页加载中&#8230;</string>
+
+
+    <!-- 登录 -->
+    <string name="login_register">注册</string>
+    <string name="login_forget">忘记密码？</string>
+    <string name="login_text">登录</string>
+
+
+    <string name="open_sliding_menu">打开侧边栏</string>
+    <string name="close_sliding_menu">关闭侧边栏</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">设置</string>
+
+    <string name="setting_language_switchover">语言切换</string>
+    <string name="setting_language_simple">简体中文</string>
+    <string name="setting_language_complex">繁体中文</string>
+    <string name="setting_language_english">英文</string>
+    <string name="setting_language_system">跟随系统</string>
+    <string name="setting_update">检查更新</string>
+    <string name="setting_update_content">修复Bug\n优化用户体验</string>
+    <string name="setting_password">修改密码</string>
+    <string name="setting_face_login">人脸登录</string>
+
+    <string name="setting_phone">修改手机</string>
+
+    <string name="setting_auto">自动登录</string>
+    <string name="setting_cache">清空缓存</string>
+
+    <string name="setting_agreement">隐私协议</string>
+    <string name="setting_about">关于我们</string>
+    <string name="setting_exit">退出登录</string>
+
+    <!--隐私协议-->
+    <string name="privacy_title">隐私协议</string>
+    <string name="privacy_policy_content">
+    感谢您使用我们的应用程序。我们非常重视您的隐私。本隐私政策解释了我们收集、使用和披露个人信息的方式。在使用我们的服务之前，请阅读本隐私政策。\n
+    如果您使用我们的服务，即表示您同意收集和使用信息的规则。我们收集的个人信息用于提供和改进服务。除非本隐私政策另有规定，否则我们不会向任何人出售或出租您的个人信息。\n
+    <b>1. 信息收集与使用</b>\n
+    我们的应用不会直接收集您的个人信息，但可能会使用第三方服务来收集信息，以提高我们的服务质量。\n
+    <b>2. 日志数据</b>\n
+    我们想通知您，每当您使用我们的服务时，我们可能会收集与您的设备相关的信息（通过第三方服务）。此日志数据可能包括您的设备 Internet 协议 ("IP") 地址、设备名称、操作系统版本、使用我们的服务的时间和日期以及其他统计信息。\n
+    <b>3. Cookies</b>\n
+    Cookies 是包含小量数据的文件，通常用作匿名唯一标识符。这些数据通过您的浏览器从我们的网站发送，并存储在您的设备上。我们的应用不直接使用 Cookies，但第三方服务可能会使用 Cookies 来收集有关您使用我们服务的信息。\n
+    <b>4. 服务提供商</b>\n
+    我们可能雇用第三方公司和个人来促进我们的服务 ("服务提供商")、提供服务代表我们进行服务、执行与服务相关的服务，或协助我们分析服务的使用方式。\n
+    <b>5. 安全性</b>\n
+    我们非常重视对您的个人信息的保护，但请记住，因特网的电子传输方式或电子存储方式都不是 100% 安全的。虽然我们努力使用商业上可接受的方式来保护您的个人信息，但我们无法保证其绝对安全性。\n
+    <b>6. 联系我们</b>\n
+    如果您对本隐私政策有任何疑问或建议，请随时通过电子邮件与我们联系。</string>
+
+
+    <!-- 邮箱 -->
+    <string name="common_qq_email">2028751281@QQ.com</string>
+    <string name="common_google_email">tengdaolin5@gmail.com</string>
+    <!-- 电话 -->
+    <string name="common_phone">17769443613</string>
+
+
+    <!-- 关于 -->
+    <string name="about">关于</string>
+    <string name="about_title">%1$s%2$s</string>
+    <string name="about_app_name">@string/app_name</string>
+    <string name="about_copyright">Copyright © 2023 &#8211; 2030</string>
+    <string name="about_phone">客户服务热线</string>
+    <string name="about_email">%1$s官方邮箱</string>
+    <string name="about_copy">点击复制</string>
+    <string name="about_dial">点击拨打</string>
+    <string name="about_word">解锁知识之门，畅游学海尽兴</string>
+
+    <string name="sliding_menu_setting_name">设置</string>
+    <!-- 升级对话框 -->
+    <string name="update_title">发现新版本</string>
+    <string name="update_title_2">暂无更新</string>
+
+    <string name="update_content">更新内容</string>
+
+    <string name="update_no">下次再说</string>
+    <string name="update_yes">立即更新</string>
+
+    <string name="update_permission_hint">必须先要授予权限才能正常下载更新哦</string>
+
+    <string name="update_status_start">正在下载</string>
+    <string name="update_status_running">下载中 %d%%</string>
+    <string name="update_status_successful">下载完成，点击安装</string>
+    <string name="update_status_failed">下载失败，点击重试</string>
+
+    <string name="update_no_update">当前已是最新版本</string>
+
+    <string name="update_notification_channel_id">update</string>
+    <string name="update_notification_channel_name">升级通知</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">身份校验</string>
+
+
+    <string name="common_phone_input_hint">请输入手机号码</string>
+    <string name="common_phone_input_error">手机号输入不正确</string>
+
+    <string name="common_password_input_error">请输入密码</string>
+    <string name="common_password_input_unlike">两次密码输入不一致，请重新输入</string>
+
+    <string name="common_code_input_hint">请输入验证码</string>
+    <string name="common_code_send">发送验证码</string>
+    <string name="common_code_send_hint">验证码已发送，请注意查收</string>
+    <string name="common_code_error_hint">验证码错误，请检查输入</string>
+    <string name="common_code_input_original_password">请输入原密码</string>
+    <string name="common_code_error_original_password">原密码错误，请重新输入！！！</string>
+
+
+    <string name="common_step_next">下一步</string>
+    <string name="common_step_complete">完成</string>
+    <string name="common_step_commit">提交</string>
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">设置手机号</string>
+    <string name="phone_reset_change_hint">下次登录请使用更换后的新手机号登录</string>
+    <string name="phone_reset_commit">立即绑定</string>
+
+    <string name="phone_reset_commit_succeed">绑定成功</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">设置登录密码</string>
+    <string name="password_reset_phone_hint1">设置6&#8211;18位登录密码</string>
+    <string name="password_reset_phone_hint2">重新输入一次密码</string>
+    <string name="password_reset_input_error">两次密码输入不一致，请重新输入</string>
+    <string name="password_reset_success">修改成功</string>
+
+    <string name="password_forget_title">忘记密码</string>
+
+
+    <!--密码强度-->
+    <string name="strength_weak">较弱</string>
+    <string name="strength_medium">中等</string>
+    <string name="strength_strong">强</string>
+    <string name="password_text">密码强度</string>
+    <string name="password_strength">%1$s%2$s</string>
+
+    <!--单目、双目识别注册界面-->
+    <string name="switch_camera">切换相机</string>
+    <string name="switch_camera_failed">切换相机失败</string>
+    <string name="recognize_failed_notice">未通过:%s</string>
+    <string name="recognize_success_notice">通过:%s</string>
+    <string name="low_confidence_level">人脸置信度低</string>
+    <string name="specific_engine_init_failed">%s 初始化失败，错误码为:%d</string>
+    <string name="notice_change_detect_degree">相机已切换，若无法检测到人脸，需要在首页修改视频模式人脸检测角度</string>
+    <string name="liveness_detect">活体检测</string>
+    <string name="camera_rgb">RGB CAMERA</string>
+    <string name="camera_ir">IR CAMERA</string>
+    <string name="camera_rgb_preview_size">RGB CAMERA\n%dx%d</string>
+    <string name="camera_ir_preview_size">IR CAMERA\n%dx%d</string>
+    <string name="camera_error_notice">\n可能的原因：该设备不支持同时打开两个摄像头</string>
+    <string name="draw_ir_rect_mirror_horizontal">IR人脸框水平镜像绘制</string>
+    <string name="draw_ir_rect_mirror_vertical">IR人脸框垂直镜像绘制</string>
+
+    <!--各个界面获取本地图片失败提示-->
+    <string name="get_picture_failed">获取图片失败</string>
+
+    <!--各个界面获取权限失败时的提示-->
+    <string name="permission_denied">权限被拒绝！</string>
+
+    <!--各个界面引擎初始化失败的提示-->
+    <string name="init_failed">引擎初始化失败，错误码为 %d</string>
+    <string name="engine_not_initialized">引擎未初始化，错误码为 %d</string>
+    <string name="face_recognition">人脸识别</string>
+
+
+    <!--批量处理-->
+    <string name="cancel">取消</string>
+    <string name="batch_process_notification_register">请将需要注册的图片放在\nsdcard/arcfacedemo/register\n目录下</string>
+    <string name="batch_process_no_face_need_to_delete">无人脸需要删除</string>
+    <string name="batch_process_confirm_delete">确认删除这%d张图片及人脸特征？</string>
+    <string name="batch_process_batch_register">批量注册</string>
+    <string name="batch_process_notification">提示</string>
+    <string name="batch_process_clear_faces">清空人脸库</string>
+    <string name="batch_process_path_is_not_exists">路径 \n%s\n 不存在</string>
+    <string name="batch_process_path_is_not_dir">路径 \n%s\n 不是文件夹</string>
+    <string name="batch_process_processing_please_wait">处理中，请稍等</string>
+    <string name="batch_process_finished_info">处理完成！\n处理总数 =  %d \n成功数 = %d \n失败数 = %d \n处理失败的图片已保存在文件夹 \' %s \'</string>
+
+</resources>

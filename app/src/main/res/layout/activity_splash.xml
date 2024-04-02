@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/welcome" />
+<!--    <com.example.applications.view.SkinImageView-->
+<!--        android:id="@+id/iv_skin_logo"-->
+<!--        android:layout_width="88dp"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:src="@drawable/ic_launcher"-->
+<!--        android:tint="@color/icolorPrimaryReverse"-->
+<!--        tools:ignore="UseAppTint" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_skin_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/iv_skin_logo"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:layout_marginRight="32dp"-->
+<!--        android:text="@string/splash_title"-->
+<!--        android:textColor="@color/colorPrimaryReverse"-->
+<!--        android:textSize="24sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_skin_desc"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/tv_skin_name"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginRight="32dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/splash_desc"-->
+<!--        android:textColor="@color/colorPrimaryDarkReverse"-->
+<!--        android:textSize="13sp" />-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_below="@+id/tv_skin_desc"-->
+<!--        android:gravity="center">-->
+
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            />-->
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/lottieAnimationView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="false"-->
+<!--        app:lottie_rawRes="@raw/loading_2"/>-->
+<!--    </RelativeLayout>-->
+    <TextView
+        android:id="@+id/tv_build_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/colorPrimaryDarkReverse"
+        android:textSize="13sp" />
+</RelativeLayout>
