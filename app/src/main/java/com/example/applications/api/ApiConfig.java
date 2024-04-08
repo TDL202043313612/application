@@ -12,7 +12,7 @@ import okhttp3.OkHttpClient;
 public class ApiConfig {
     public static final int PAGE_SIZE = 5;
 
-    public static final String BASE_URL = "http://192.168.211.230:8080/renren-fast";
+    public static final String BASE_URL = "http://192.168.245.230:8080/renren-fast";
 //    public static final String BASE_URL = "http://192.168.1.4:8080/renren-fast";
 
     public static final String LOGIN = "/app/login";

@@ -1,7 +1,5 @@
 package com.example.applications.activity;
 
-import android.util.Log;
-
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
@@ -140,7 +138,7 @@ public class HomeActivity extends BaseActivity implements
 
     @Override
     public void setCommonTabAnimal(boolean flag) {
-        Log.d("test", String.valueOf(flag));
+//        Log.d("test", String.valueOf(flag));
         commonTabWithAnimation(commonTabLayout,flag,500);
     }
 
