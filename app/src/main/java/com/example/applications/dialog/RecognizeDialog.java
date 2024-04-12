@@ -1,4 +1,4 @@
-package com.example.applications.arcface;
+package com.example.applications.dialog;
 
 import static com.example.applications.api.ApiConfig.SHARED_PREFERENCES_FACE_LOGIN;
 import static com.example.applications.api.ApiConfig.SHARED_PREFERENCES_USER_NAME;
@@ -16,8 +16,10 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.core.app.ActivityCompat;
@@ -26,6 +28,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieDrawable;
 import com.arcsoft.face.AgeInfo;
 import com.arcsoft.face.ErrorInfo;
 import com.arcsoft.face.FaceEngine;
@@ -36,6 +39,7 @@ import com.arcsoft.face.enums.DetectFaceOrientPriority;
 import com.arcsoft.face.enums.DetectMode;
 import com.example.applications.R;
 import com.example.applications.activity.HomeActivity;
+import com.example.applications.arcface.ArcFaceBaseActivity;
 import com.example.applications.arcface.faceserver.CompareResult;
 import com.example.applications.arcface.faceserver.FaceServer;
 import com.example.applications.arcface.model.DrawInfo;
@@ -71,8 +75,8 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
-public class InitRecognizeActivity extends ArcFaceBaseActivity implements ViewTreeObserver.OnGlobalLayoutListener {
-    private static final String TAG = "InitRecognize";
+public class RecognizeDialog extends ArcFaceBaseActivity implements ViewTreeObserver.OnGlobalLayoutListener {
+    private static final String TAG = "RecognizeDialog";
     private static final int MAX_DETECT_NUM = 10;
     /**
      * 当FR成功，活体未成功时，FR等待活体的时间
@@ -187,11 +191,15 @@ public class InitRecognizeActivity extends ArcFaceBaseActivity implements ViewTr
             Manifest.permission.READ_PHONE_STATE
 
     };
-
+    /**
+     * 创建Handler对象
+     */
+    Handler handler = new Handler(Looper.getMainLooper());
+    Runnable runnable=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_init_recognize);
+        setContentView(R.layout.dialog_recognize);
         //保持亮屏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
@@ -227,6 +235,41 @@ public class InitRecognizeActivity extends ArcFaceBaseActivity implements ViewTr
         recyclerShowFaceInfo.setLayoutManager(new GridLayoutManager(this, spanCount));
         recyclerShowFaceInfo.setItemAnimator(new DefaultItemAnimator());
 
+
+
+        initLottieAnimationView(3000);// 3000毫秒即3秒
+
+        initFaceRecognitionDialog();
+    }
+    /**
+     * 初始化FaceRecognitionDialog
+     */
+    private void initFaceRecognitionDialog(){
+        // 设置ContentView之前，获取Window对象并设置其属性
+        Window window = getWindow();
+        if (window != null) {
+            WindowManager.LayoutParams layoutParams = window.getAttributes();
+
+            // 设置Dialog的宽度和高度
+            layoutParams.width = WindowManager.LayoutParams.WRAP_CONTENT; // 或者WRAP_CONTENT，根据需求
+            layoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
+
+            // 设置Dialog的位置到屏幕顶部
+            layoutParams.gravity = Gravity.TOP | Gravity.CENTER_HORIZONTAL; // 水平居中，顶部对齐
+
+            // 清除FLAG_DIM_BEHIND标志，防止Dialog背后的内容变暗
+            layoutParams.flags &= ~WindowManager.LayoutParams.FLAG_DIM_BEHIND;
+
+            // 应用新的窗口属性
+            window.setAttributes(layoutParams);
+        }
+    }
+    /**
+     * 初始化LottieAnimationView
+     */
+    private void initLottieAnimationView(long delayMillis){
+        faceId.setAnimation(R.raw.face_id_unsuccessful);/*设置动画*/
+        faceId.setRepeatCount(LottieDrawable.INFINITE);/*设置播放次数为无数次*/
         faceId.addAnimatorListener(new AnimatorListenerAdapter() {
 
             @Override
@@ -237,23 +280,16 @@ public class InitRecognizeActivity extends ArcFaceBaseActivity implements ViewTr
                 }
             }
         });
-
-        initLottieAnimationView(3000);// 3000毫秒即3秒
-
-    }
-
-    /**
-     * 初始化LottieAnimationView
-     */
-    private void initLottieAnimationView(long delayMillis){
-        // 使用Handler实现延迟
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+        // 创建Runnable对象
+        runnable = new Runnable() {
             @Override
             public void run() {
                 // 3秒后执行动画
                 faceId.playAnimation();
             }
-        }, delayMillis);
+        };
+        // 使用postDelayed方法将Runnable对象放入消息队列
+        handler.postDelayed(runnable, delayMillis);
     }
     /**
      * 初始化引擎
@@ -478,7 +514,7 @@ public class InitRecognizeActivity extends ArcFaceBaseActivity implements ViewTr
                             .flQueueSize(MAX_DETECT_NUM)
                             .previewSize(previewSize)
                             .faceListener(faceListener)
-                            .trackedFaceCount(trackedFaceCount == null ? ConfigUtil.getTrackedFaceCount(InitRecognizeActivity.this.getApplicationContext()) : trackedFaceCount)
+                            .trackedFaceCount(trackedFaceCount == null ? ConfigUtil.getTrackedFaceCount(RecognizeDialog.this.getApplicationContext()) : trackedFaceCount)
                             .build();
                 }
             }
@@ -563,7 +599,7 @@ public class InitRecognizeActivity extends ArcFaceBaseActivity implements ViewTr
                 @Override
                 public void subscribe(ObservableEmitter<Boolean> emitter) {
 
-                    boolean success = FaceServer.getInstance().registerNv21(InitRecognizeActivity.this, nv21.clone(), previewSize.width, previewSize.height,
+                    boolean success = FaceServer.getInstance().registerNv21(RecognizeDialog.this, nv21.clone(), previewSize.width, previewSize.height,
                             facePreviewInfoList.get(0).getFaceInfo(), "registered " + faceHelper.getTrackedFaceCount());
                     emitter.onNext(success);
                 }
@@ -630,27 +666,37 @@ public class InitRecognizeActivity extends ArcFaceBaseActivity implements ViewTr
                     String isPassed = name.split(":")[0];
                     boolean isOpenFace = getStringFromSp(userName+SHARED_PREFERENCES_FACE_LOGIN,"false").equals("true");
                     if ((livenessDetect == false || liveness == LivenessInfo.ALIVE) && isPassed.equals(getString(R.string.recognize_success_notice).split(":")[0]) && isOpenFace){
-                        /*标志识别成功，不需要再次识别了*/
-                        openNext = false;
+                        // 当你想在run方法执行之前停止这个postDelayed操作时
+                        if (runnable!=null) { /*这个if解决了两个问题1：执行成功动画有时候执行两次的问题 2：当执行成功动画后，还会显示失败动画的问题*/
+                            handler.removeCallbacks(runnable);
+                        }
+
                         // 停止当前动画
-                        faceId.cancelAnimation();
+                        faceId.pauseAnimation();
+
                         faceId.setAnimation(R.raw.face_id_successful);
                         faceId.setRepeatCount(0);/*不重复*/
+
                         // 设置动画监听
                         faceId.addAnimatorListener(new AnimatorListenerAdapter() {
 
                             @Override
                             public void onAnimationEnd(Animator animation) {
+                                faceId.pauseAnimation();
                                 faceId.removeAnimatorListener(this);
 //                              saveStringToSp("token",loginResponse.getToken());
                                 saveStringToSp(SHARED_PREFERENCES_USER_NAME,userName);
 //                              saveStringToSp("user_password",password);
                                 saveStringToSp("user_phone","17769443613");
-                                startActivity(new Intent(InitRecognizeActivity.this, HomeActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
+                                startActivity(new Intent(RecognizeDialog.this, HomeActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
                             }
                         });
-                        // 开始动画
+
                         faceId.playAnimation();
+
+
+                        /*标志识别成功，不需要再次识别了*/
+                        openNext = false;
                     }
                 }catch (Exception e){
                 }
@@ -821,6 +867,22 @@ public class InitRecognizeActivity extends ArcFaceBaseActivity implements ViewTr
     public void onBackPressed() {
         super.onBackPressed();
         finish();
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+
+        overridePendingTransition(R.anim.face_recognition_enter, R.anim.face_recognition_exit); // 进入动画
+
+    }
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.face_recognition_enter, R.anim.face_recognition_exit); // 进入动画
+
     }
 
     /**

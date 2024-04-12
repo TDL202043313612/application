@@ -53,4 +53,13 @@
     <!-- 按钮禁用时的颜色 -->
     <color name="common_button_disable_color">#BBBBBB</color>
     <color name="color_bg_name">#80000000</color>
+
+    <color name="transparent_color">#00FFFFFF</color>
+
+    <color name="main_background_navigation_bar_color">#dcd3ca</color>
+    <color name="main_background_status_bar_color">#dcd3ca</color>
+    <color name="main_txt_view_slogan_start_color">#F49A96</color>
+    <color name="main_txt_view_slogan_end_color">#63D69C</color>
+
+    <color name="main_login_button_color">#ebf576</color>
 </resources>

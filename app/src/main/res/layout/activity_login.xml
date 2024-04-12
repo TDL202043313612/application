@@ -207,18 +207,18 @@
                     android:layout_marginRight="@dimen/dp_18"
                     android:layout_marginLeft="@dimen/dp_18"
                     android:gravity="center">
-                    <!--            <Button-->
-                    <!--                android:layout_width="match_parent"-->
-                    <!--                android:layout_height="@dimen/dimen_55dp"-->
-                    <!--                android:id="@+id/btn_login"-->
-                    <!--                android:textSize="24sp"-->
-                    <!--                android:text="@string/login"-->
-                    <!--                android:textColor="@color/white"-->
-                    <!--                android:background="@drawable/shape_login_btn"-->
-                    <!--                android:layout_marginLeft="@dimen/dimen_18dp"-->
-                    <!--                android:layout_marginRight="@dimen/dimen_18dp"-->
-                    <!--                android:layout_marginTop="@dimen/dimen_67dp"-->
-                    <!--                android:stateListAnimator="@null" />-->
+<!--                                <Button-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="@dimen/dimen_55dp"-->
+<!--                                    android:id="@+id/btn_login"-->
+<!--                                    android:textSize="24sp"-->
+<!--                                    android:text="@string/login"-->
+<!--                                    android:textColor="@color/white"-->
+<!--                                    android:background="@drawable/shape_login_btn"-->
+<!--                                    android:layout_marginLeft="@dimen/dimen_18dp"-->
+<!--                                    android:layout_marginRight="@dimen/dimen_18dp"-->
+<!--                                    android:layout_marginTop="@dimen/dimen_67dp"-->
+<!--                                    android:stateListAnimator="@null" />-->
                     <!--            <ProgressBar-->
                     <!--                android:id="@+id/progressBar"-->
                     <!--                android:layout_width="30dp"-->

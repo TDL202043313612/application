@@ -39,7 +39,7 @@
             android:name=".activity.SettingFaceLoginActivity"
             android:exported="true" />
 
-        <receiver android:name=".util.NetworkChangeReceiver">
+        <receiver android:name=".util.NetworkChangeReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
@@ -69,13 +69,12 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
         <activity
             android:name=".activity.WebActivity"
             android:exported="true" />
@@ -150,6 +149,11 @@
 
         <activity
             android:name=".arcface.InitRecognizeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".dialog.RecognizeDialog"
+            android:theme="@style/DialogTheme"
             android:exported="true" />
         <activity
             android:name=".arcface.InitRegisterActivity"

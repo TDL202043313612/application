@@ -6,6 +6,35 @@
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 
+    <style name="DialogTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/shape_face_recognition_form</item>
+
+
+
+        <item name="android:layout_centerInParent">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮在窗口之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否显示title-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <!--dialog之外没有焦点的区域是否罩上黑色半透明 主要是这个地方false表示不要遮罩-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- 定义进出动画 -->
+    <style name="CustomDialogAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/face_recognition_enter</item>
+        <item name="android:windowExitAnimation">@anim/face_recognition_exit</item>
+    </style>
+
+
     <style name="AppTheme" parent="Theme.MaterialComponents">
         <!-- 其他属性 -->
         <item name="colorSurface">@color/green</item>
@@ -178,6 +207,8 @@
         <item name="android:hint">@string/search_hint</item>
 
     </style>
+
+
 
     <color name="search_view_theme_primary">@color/white</color>
     <color name="theme_primary_text_inverted">@color/black</color>

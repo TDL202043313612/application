@@ -141,16 +141,13 @@ public class VideoFragment extends BaseFragment implements OnItemChildClickListe
                 // 检查是否向下滑动
                 if (dy > 0) {
                     // 向下滑动逻辑
-//                    Log.d("RecyclerView", "向下滑动");
                     videoFragmentToHomeFragmentListener.setCommonTabAnimal(true);
                 } else if (dy < 0) {
                     // 检查是否从顶部开始滑动
                     if (lastVisibleItemPosition == 0) {
                         // 向上滑动并且位于顶部逻辑
-//                        Log.d("RecyclerView", "从顶部向上滑动");
                     } else {
                         // 向上滑动但不是从顶部开始逻辑
-//                        Log.d("RecyclerView", "向上滑动");
                         videoFragmentToHomeFragmentListener.setCommonTabAnimal(false);
                     }
                 }

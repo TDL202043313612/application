@@ -5,6 +5,8 @@ import static android.view.View.VISIBLE;
 import static com.example.applications.api.ApiConfig.DOUBLE_BACK_PRESS_TIME_INTERVAL;
 import static com.umeng.socialize.utils.ContextUtil.getPackageName;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
@@ -13,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -50,6 +53,7 @@ public class HomeFragment extends BaseFragment implements VideoFragment.VideoFra
     private MaterialSearchView searchView;
     private ViewPager viewPager;
     private SlidingTabLayout slidingTabLayout;
+    private LinearLayout toolbarContainer;
     private Toolbar toolbar;
     private HomeFragmentToHomeActivityListener homeFragmentToHomeActivityListener;
     private List<String> stringList = new ArrayList<>();
@@ -102,6 +106,7 @@ public class HomeFragment extends BaseFragment implements VideoFragment.VideoFra
         loadingLayout = findViewById(R.id.loading_layout);
         searchView = (MaterialSearchView) findViewById(R.id.search_view);
         toolbar = findViewById(R.id.toolbar);
+        toolbarContainer = findViewById(R.id.toolbar_container);
 
     }
 
@@ -302,11 +307,12 @@ public class HomeFragment extends BaseFragment implements VideoFragment.VideoFra
 
         @Override
         public void onSearchViewShown() {
+            searchView.setVisibility(View.VISIBLE);
             // 调用接口方法来控制标签
             if (homeFragmentToHomeActivityListener != null) {
                 homeFragmentToHomeActivityListener.setCommonTabVisibility(GONE);
             }
-            searchView.setVisibility(View.VISIBLE);
+
 
 //            toast("onSearchViewShown");
 
@@ -314,11 +320,12 @@ public class HomeFragment extends BaseFragment implements VideoFragment.VideoFra
 
         @Override
         public void onSearchViewClosed() {
+            searchView.setVisibility(GONE);
             // 调用接口方法来控制标签
             if (homeFragmentToHomeActivityListener != null) {
                 homeFragmentToHomeActivityListener.setCommonTabVisibility(VISIBLE);
             }
-            searchView.setVisibility(GONE);
+
 //            toast("onSearchViewClosed");
 
         }
@@ -345,10 +352,45 @@ public class HomeFragment extends BaseFragment implements VideoFragment.VideoFra
         }
         // 处理回调逻辑
     }
+    private void slidingTabLayoutWithAnimation(final LinearLayout fragment, final boolean flag, final long duration) {
+        // 使用ViewPropertyAnimator创建过渡动画
+        if (flag){/*下*/
+            fragment.animate()
+                    .alpha(0f) // 设置为透明
+                    .translationY(-toolbar.getHeight())
+                    .setDuration(duration / 2) // 设置动画时长为总时长的一半
+                    .start(); // 开始动画
+        }else {
+            fragment.animate()
+                    .alpha(1f) // 设置为不透明
+                    .translationY(0)
+                    .setDuration(duration / 2)
+                    .setListener(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            super.onAnimationEnd(animation);
+                            if (flag){/*下*/
+                                fragment.setVisibility(GONE); // 动画结束后隐藏Toolbar
+                            }
+                        }
+
+                        @Override
+                        public void onAnimationStart(Animator animation) {
+                            super.onAnimationStart(animation);
+                            if (!flag){/*上*/
+                                fragment.setVisibility(VISIBLE); // 动画结束后隐藏Toolbar
+                            }
+                        }
+                    })
+                    .start(); // 设置动画时长为总时长的一半
+        }
+
+    }
     @Override
     public void setCommonTabAnimal(boolean flag) {
-//        Log.d("test", String.valueOf(flag));
         homeFragmentToHomeActivityListener.setCommonTabAnimal(flag);
+        //slidingTabLayoutWithAnimation(toolbarContainer,flag,500);
+
     }
     public void setListener(HomeFragmentToHomeActivityListener listener) {
         this.homeFragmentToHomeActivityListener = listener;

@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="@dimen/dp_50"
+    android:layout_height="@dimen/dp_50"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/transparent_color">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent_color"
+    tools:context=".dialog.RecognizeDialog">
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:alpha="0">
         <TextureView
             android:id="@+id/single_camera_texture_preview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <com.example.applications.arcface.widget.FaceRectView
             android:id="@+id/single_camera_face_rect_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </FrameLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/single_camera_recycler_view_person"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="invisible"/>
+        android:visibility="gone"/>
 
-<!--    <ImageView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:src="@drawable/face_recognize_background"-->
-<!--        android:layout_centerInParent="true"/>-->
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/face_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        app:lottie_rawRes="@raw/face_id_unsuccessful"
-        app:lottie_loop="true"
+        app:lottie_loop="false"
         app:lottie_autoPlay="false"/>
 
 </RelativeLayout>

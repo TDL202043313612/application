@@ -10,7 +10,6 @@ import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
 
-
 @Database(entities = {PersonalMassageEntity.class}, version = 1)
 public abstract class PersonalMassageDatabase extends RoomDatabase {
     public abstract PersonalMassageDao roomTestDao();

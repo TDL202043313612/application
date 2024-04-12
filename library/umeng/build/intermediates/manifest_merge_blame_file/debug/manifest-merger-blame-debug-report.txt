@@ -35,20 +35,20 @@
 21
 22    <!-- Android 11 软件包可见性适配：https://developer.android.google.cn/about/versions/11/privacy/package-visibility -->
 23    <queries>
-23-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:69:5-74:15
+23-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:70:5-75:15
 24
 25        <!-- 手机 QQ 的包名 -->
 26        <package android:name="com.tencent.mobileqq" />
-26-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:71:9-56
-26-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:71:18-53
+26-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:72:9-56
+26-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:72:18-53
 27        <!-- 微信的包名 -->
 28        <package android:name="com.tencent.mm" />
-28-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:73:9-50
-28-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:73:18-47
+28-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:74:9-50
+28-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:74:18-47
 29    </queries>
 30
 31    <application>
-31-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:17:5-66:19
+31-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:17:5-67:19
 32
 33        <!-- 友盟 Key（请在 Gradle 中配置，请不要在此处修改） -->
 34        <meta-data
@@ -88,42 +88,44 @@
 58
 59        <!-- QQ 回调 -->
 60        <activity
-60-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:45:9-58:20
+60-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:45:9-59:20
 61            android:name="com.tencent.tauth.AuthActivity"
 61-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:46:13-58
-62            android:launchMode="singleTask"
-62-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:47:13-44
-63            android:noHistory="true"
-63-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:48:13-37
-64            tools:node="replace" >
-64-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:49:13-33
-65            <intent-filter>
-65-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:50:13-57:29
-66                <action android:name="android.intent.action.VIEW" />
-66-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:51:17-69
-66-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:51:25-66
-67
-68                <category android:name="android.intent.category.DEFAULT" />
-68-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:53:17-76
-68-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:53:27-73
-69                <category android:name="android.intent.category.BROWSABLE" />
-69-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:54:17-78
-69-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:54:27-75
-70
-71                <data android:scheme="tencent101828096" />
-71-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:56:23-55
-72            </intent-filter>
-73        </activity>
-74        <activity
-74-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:60:9-64:36
-75            android:name="com.tencent.connect.common.AssistActivity"
-75-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:61:13-69
-76            android:configChanges="orientation|keyboardHidden"
-76-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:62:13-63
-77            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-77-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:63:13-72
-78            tools:node="replace" />
-78-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:64:13-33
-79    </application>
-80
-81</manifest>
+62            android:exported="true"
+62-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:50:13-36
+63            android:launchMode="singleTask"
+63-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:47:13-44
+64            android:noHistory="true"
+64-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:48:13-37
+65            tools:node="replace" >
+65-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:49:13-33
+66            <intent-filter>
+66-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:51:13-58:29
+67                <action android:name="android.intent.action.VIEW" />
+67-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:52:17-69
+67-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:52:25-66
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:54:17-76
+69-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:54:27-73
+70                <category android:name="android.intent.category.BROWSABLE" />
+70-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:55:17-78
+70-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:55:27-75
+71
+72                <data android:scheme="tencent101828096" />
+72-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:57:23-55
+73            </intent-filter>
+74        </activity>
+75        <activity
+75-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:61:9-65:36
+76            android:name="com.tencent.connect.common.AssistActivity"
+76-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:62:13-69
+77            android:configChanges="orientation|keyboardHidden"
+77-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:63:13-63
+78            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+78-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:64:13-72
+79            tools:node="replace" />
+79-->/Users/mac/AndroidStudioProjects2/applications/library/umeng/src/main/AndroidManifest.xml:65:13-33
+80    </application>
+81
+82</manifest>

@@ -34,8 +34,8 @@ import com.example.applications.R;
 import com.example.applications.aop.SingleClick;
 import com.example.applications.api.Api;
 import com.example.applications.api.ApiConfig;
-import com.example.applications.arcface.InitRecognizeActivity;
 import com.example.applications.callback.TtitCallback;
+import com.example.applications.dialog.RecognizeDialog;
 import com.example.applications.entity.LoginResponse;
 import com.example.applications.manager.InputTextManager;
 import com.example.applications.other.KeyboardWatcher;
@@ -247,7 +247,7 @@ public class LoginActivity extends BaseActivity
             navigateto(PrivacyAgreementActivity.class);
         }else if (id == R.id.tx_face_recognition){/*人脸识别*/
             if (checkBox.isChecked()) {
-                navigateto(InitRecognizeActivity.class);
+                navigateto(RecognizeDialog.class);
             }else {
                 agreementRe.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.shake_anim));
                 btnLogin.showError(SHOW_NO_ERROR);

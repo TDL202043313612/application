@@ -55,7 +55,7 @@ public abstract class ArcFaceBaseActivity extends AppCompatActivity {
      * @param requestCode  请求码
      * @param isAllGranted 是否全部被同意
      */
-    abstract void afterRequestPermission(int requestCode, boolean isAllGranted);
+    public abstract void afterRequestPermission(int requestCode, boolean isAllGranted);
 
     protected void showToast(String s) {
         Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();

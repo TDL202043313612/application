@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/container"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +9,11 @@
     android:orientation="vertical"
     tools:context=".fragment.HomeFragment">
     <LinearLayout
+        android:id="@+id/sliding_"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="?attr/actionBarSize" >
+        android:layout_marginTop="?attr/actionBarSize">
         <com.example.applications.view.SkinSlidingTabLayout
             android:id="@+id/slidingTabLayout"
             android:layout_width="match_parent"
@@ -21,7 +22,7 @@
             tl:tl_indicator_corner_radius="1.5dp"
             tl:tl_textBold="SELECT"
             tl:tl_indicator_height="3dp"
-            tl:tl_indicator_width="10dp"/>
+            tl:tl_indicator_width="10dp" />
 
         <com.weavey.loading.lib.LoadingLayout
             android:id="@+id/loading_layout"
@@ -37,6 +38,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
@@ -65,7 +67,7 @@
 <!--                android:textColor="@color/black"/>-->
 <!--        </LinearLayout>-->
         <FrameLayout
-            android:id="@+id/toolbar_container"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -86,4 +88,4 @@
 
 
 
-</FrameLayout>
+</RelativeLayout>

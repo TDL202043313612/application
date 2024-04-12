@@ -595,7 +595,7 @@ public class InitRegisterActivity extends ArcFaceBaseActivity implements ViewTre
     }
 
     @Override
-    void afterRequestPermission(int requestCode, boolean isAllGranted) {
+    public void afterRequestPermission(int requestCode, boolean isAllGranted) {
         if (requestCode == ACTION_REQUEST_PERMISSIONS) {
             if (isAllGranted) {
                 initEngine();
